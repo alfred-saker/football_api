@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+
+<!-- <h2 style="text-align: center;font-size: 25px; font-weight: 600;margin-top:1em;">Toutes les sections!</h2> -->
+
+<div class="breadcrumb">
+  <p><a href="{% url 'home' %}">Home /</a></p>
+  <p><a href="">Selection option</a></p>
+</div>
+
+<div class="container_choice">
+  <div class="option_pays">
+    <a href="{% url 'listcountry' %}"><img src="{% static 'images/pays.png' %}" alt="Icone pays"></a>
+    <p>Pays</p>
+  </div>
+  <div class="option_league">
+    <a href="{% url 'getApiLeague' %}"><img src="{% static 'images/league.png' %}" alt="Icone League"></a>
+    <p>League</p>
+  </div>
+  <div class="option_player">
+    <a href=""><img src="{% static 'images/player.png' %}" alt="Icone Player"></a>
+    <p>Joueurs</p>
+  </div>
+  <div class="option_teams">
+    <a href=""><img src="{% static 'images/teams.png' %}" alt="Icone Teams"></a>
+    <p>Equipes</p>
+  </div>
+  <div class="option_coatch">
+    <a href=""><img src="{% static 'images/coatch.png' %}" alt="icone Coatch"></a>
+    <p>Coatch</p>
+  </div>
+  <div class="option_transfert">
+    <a href=""><img src="{% static 'images/transfert.png' %}" alt="Icone Transfert"></a>
+    <p>Transfert</p>
+  </div>
+</div>
+{% endblock %}

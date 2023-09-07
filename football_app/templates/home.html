@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<h2 style="text-align: center;font-size: 25px; font-weight: 600;margin-top: 4em;">Retrouvez toutes les informations de vos sports favoris !</h2>
+<div class="container">
+  <div class="section_foot">
+    <a href="{% url 'select_option' %}"><img src="{% static 'images/hero-banner.png' %}" alt="Image football"></a>
+    <p>Infos Football</p>
+  </div>
+  <div class="section_basket">
+    <a href=""><img src="{% static 'images/basket-player.png' %}" alt="Image Basket"></a>
+    <p>Infos Basketball</p>
+  </div>
+</div>
+
+{% endblock %}

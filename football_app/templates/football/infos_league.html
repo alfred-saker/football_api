@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="breadcrumb">
+  <p><a href="{% url 'home' %}">Home /</a></p>
+  <p><a href="{% url 'select_option' %}">Selection option /</a></p>
+  <p><a href="">Toutes les leagues</a></p>
+</div>
+<div class="main_info">
+  <div class="info_season">
+    <h2 style="text-align: center;font-size: 25px; font-weight: 600;margin-top:1em;">Aucune donnée disponibles</h2>
+  </div>
+  <div class="info_pays"></div>
+</div>
+
+{% endblock %}

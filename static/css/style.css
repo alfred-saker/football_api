@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+
+body{
+  font-family: 'Raleway', sans-serif;
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 700px;
+  line-height: 2em;
+  margin: 0 auto;
+}
+.container p{
+  font-size: 25px;
+  font-weight: 600;
+}
+.section_foot{
+  background-color: rgb(252, 255, 255);
+  border-radius: 10px 10px 10px 10px;
+  border: 2px solid rgb(231, 234, 234);
+  width:300px;
+  padding: 1em;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 1em;
+}
+.section_foot img{
+  width: 90%;
+}
+.section_basket{
+  background-color: rgb(252, 255, 255);
+  border: 2px solid rgb(231, 234, 234);
+  border-radius: 10px 10px 10px 10px;
+  text-align: center;
+  width:300px;
+  padding: 1em;
+  margin-top: 1em;
+
+}
+.section_basket img{
+  width: 100%;
+}
+
+.container_choice{
+  max-width: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+}
+.container_choice .option_pays,.option_league,.option_player,.option_teams,.option_coatch,.option_transfert{
+  width: 200px;
+  line-height: 2;
+  text-align: center;
+  margin:1em auto 1em 0;
+  background-color: rgb(252, 255, 255);
+  border: 2px solid rgb(231, 234, 234);
+  border-radius: 10px 10px 10px 10px;
+  padding: 1em;
+  cursor: pointer;
+}
+.container_choice .option_transfert:hover{
+  width: 180px;
+}
+.container_choice .option_pays:hover{
+  width: 180px;
+}
+.container_choice .option_league:hover{
+  width: 180px;
+}
+.container_choice .option_player:hover{
+  width: 180px;
+}
+.container_choice .option_coatch:hover{
+  width: 180px;
+}
+.container_choice .option_teams:hover{
+  width: 180px;
+}
+.container_choice img{
+  width: 50%;
+}
+.container_choice p{
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.breadcrumb{
+  background-color: rgb(252, 255, 255);
+  border-bottom: 2px solid rgb(231, 234, 234);
+  display: flex;
+  padding: 1em;
+  margin-top: 2em;
+}
+.breadcrumb p{
+  margin-left: 2px;
+}
+.breadcrumb p a{
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+.breadcrumb p a:hover{
+  text-decoration: underline;
+  color: black;
+}
+
+.container_pays{
+  max-width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3em auto;
+}
+.container_pays .section_pays{
+  width: 200px;
+  background-color: rgb(219, 223, 223);
+  border-radius: 5px 5px 5px 5px;
+  border: 2px solid rgb(219, 223, 223);
+  padding: 1em;
+  text-align: center;
+  margin: 1em auto 0.5em auto;
+}
+.container_pays .section_pays img{
+  width:50%;
+}
+.pagination{
+  width: 100%;
+  text-align: center;
+}
+.pagination .step-links a{
+  background-color: rgb(219, 223, 223);
+  border-radius: 5px 5px 5px 5px;
+  border: 2px solid rgb(219, 223, 223);
+  padding:5px;
+  text-decoration: none;
+  color: black;
+}
+
+
+.container_league{
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3em auto;
+}
+.container_league .list_league{
+  width: 200px;
+  background-color: rgb(219, 223, 223);
+  border-radius: 5px 5px 5px 5px;
+  border: 2px solid rgb(219, 223, 223);
+  padding: 1em;
+  text-align: center;
+  margin: 1em auto 0.5em auto;
+  line-height: 2;
+  cursor: pointer;
+}
+@media screen and (max-width:600px){
+
+}

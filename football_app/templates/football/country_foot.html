@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<!-- <h2>Classement des pays</h2> -->
+<div class="breadcrumb">
+  <p><a href="{% url 'home' %}">Home /</a></p>
+  <p><a href="{% url 'select_option' %}">Selection option /</a></p>
+  <p><a href="#">Tous les pays</a></p>
+</div>
+<div class="container_pays">
+  {% for country in items %}
+  <div class="section_pays">
+    <img src="{{ country.drapeau }}" alt="Flag" width="50">
+    <h2 style="font-size: 15px;">{{ country.nom_pays }}</h2>
+  </div>
+  {% endfor %}
+</div>
+<div class="pagination">
+  <span class="step-links">
+      {% if items.has_previous %}
+          <a href="?page=1">&laquo; first</a>
+          <a href="?page={{ items.previous_page_number }}">previous</a>
+      {% endif %}
+
+      <span class="current-page">
+          Page {{ items.number }} of {{ items.paginator.num_pages }}.
+      </span>
+
+      {% if items.has_next %}
+          <a href="?page={{ items.next_page_number }}">next</a>
+          <a href="?page={{ items.paginator.num_pages }}">last &raquo;</a>
+      {% endif %}
+  </span>
+</div>
+
+{% endblock %}
